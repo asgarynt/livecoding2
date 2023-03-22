@@ -37,3 +37,9 @@ En este reto reforzaras tus conocimientos en JavaScript, realizando una llamadas
     <!-- <a style="color:black;" href="https://danascript.github.io/the-ultimate-api-challenge-yes-no/" target="_blank" rel="noopener">Live Preview</a> -->
 </div>
 
+
+### Retroalimentación
+
+1. Revisar la estructura para agregar eventos. 
+2. Practicar DOM.
+3. Orientacion al detalle al escribir código para evitar errores durante la ejecución.

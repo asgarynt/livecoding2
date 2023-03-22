@@ -1,5 +1,9 @@
 // API
 const API_ENDPOINT = 'https://yesno.wtf/api';
+let answer = document.querySelector("#answer");
+let btn = document.querySelector("#button");
+let input = document.querySelector("#input");
+
 
 /**
  * STEPS:
@@ -11,3 +15,18 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
  * 5. Optional: add loading/error states
  *
  */
+
+
+
+
+async function fetchAnswer() {
+    let response = await fetch(`${API_ENDPOINT}`);
+    let data = await response.json();
+    console.log(data);
+
+    answer.textContent = `${data.answer}`;
+    input.value = "";
+}
+
+btn.addEventListener("click", fetchAnswer);
+
